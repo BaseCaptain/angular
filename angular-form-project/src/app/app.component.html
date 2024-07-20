@@ -7,7 +7,7 @@
     </div>
   </div>
 
-  <div>
+  <div style="padding-bottom: 10px;">
     <label>Email:</label><br>
     <input type="email" class="form-control" formControlName="email"/>
     <div *ngIf="angularFormTest.controls['email'].invalid && angularFormTest.controls['email'].touched">
@@ -17,7 +17,7 @@
 
   <div>
     <label>Phone:</label><br>
-    <input type="number" class="form-control" formControlName="phone"/>
+    <input type="text" class="form-control" formControlName="phone"/>
     <div *ngIf="angularFormTest.controls['phone'].invalid && angularFormTest.controls['phone'].touched">
       <div *ngIf="angularFormTest.controls['phone'].errors?.minlength" style="color: red;">Enter valid phone number.</div>
     </div>

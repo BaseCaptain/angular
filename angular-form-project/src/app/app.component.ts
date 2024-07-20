@@ -17,4 +17,10 @@ export class AppComponent implements OnInit {
         phone : new FormControl('',Validators.minLength(10))
       })
   }
+
+  // question in angular
+  // 1. Pipes in angular
+  // 2. Communication between components
+  // 3. Authguard
+  // 4. Interceptor
 }
