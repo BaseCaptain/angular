@@ -1,4 +1,6 @@
 <form [formGroup]="angularFormTest">
+  {{date | date:'dd/MM/yyy'}} <br>
+  {{angularFormTest.invalid | json}}
   <div style="padding-bottom: 10px;">
     <label>First Name:</label><br>
     <input type="text" class="form-control" formControlName="name"/>
